@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Página 1</title>
+    <title>Document</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
@@ -12,115 +12,107 @@
         crossorigin="anonymous"></script>
 
     <style>
-        .logo {
-            margin: 10px;
-            border-radius: 50px;
-        }
-
         body {
-            background: linear-gradient(to right, lightblue, white, lightgreen);
+            background-color: beige;
         }
 
-        .carrusel {
-            margin-top: 40px;
+        .carousel-item img {
+            width: 400px;
+            height: 500px;
+            margin-top: 15px;
+            object-fit: cover;
+        }
 
+        .navbar {
+            background: linear-gradient(to right, lightblue, white, lightgreen);
+            border-bottom: 4px solid black;
+        }
+
+
+        .carousel-control-next-icon {
+            background-color: red;
+            border-radius: 20px;
+            width: 40px;
+            height: 40px;
         }
 
         .carousel-control-prev-icon {
             background-color: red;
-            border-radius: 50px;
-            padding: 30px;
-        }
-
-        .carousel-control-next-icon {
-            background-color: red;
-            border-radius: 50px;
-            padding: 30px;
-        }
-
-        .carousel-item img {
-            width: 100%;
-            height: 700px;
-            object-fit: cover;
-            border-radius: 50px;
-        }
-
-        .formulario {
-            background-color: lightcyan;
-            margin-top: 10px;
-            border: 2px solid black;
-            border-radius: 30px;
-            margin-left: 5px;
-            margin-right: 5px;
-        }
-
-        .btn_principiopagina {
-            width: 100px;
-            margin-top: 10px;
-            background-color: red;
-            border: 5px solid black;
-            font-weight: bolder;
-        }
-
-        .btn_principiopagina:hover {
-            background-color: aquamarine;
-            color: red;
-            border: 5px solid black;
-            transition: 3s;
-        }
-
-        .btn {
-            margin-top: 10px;
-            width: 95%;
-            border-radius: 10px;
-            background-color: black;
-            color: white;
-            border: 4px solid red;
-
+            border-radius: 20px;
+            width: 40px;
+            height: 40px;
         }
 
         .card {
-            border-radius: 20px;
-            border: 4px solid white;
+            margin-top: 15px;
 
-        }
-
-        .card img {
-            border-radius: 20px 20px 0px 0px;
-            border-bottom: 4px solid white;
-            object-fit: cover;
         }
 
         .card-img-top {
-            border-radius: 20px 20px 0px 0px;
-            border-bottom: 4px solid white;
             object-fit: cover;
-            height: 400px;
+            height: 300px;
+
         }
 
-        .card-body {
-            border-radius: 0px 0px 20px 20px;
-            background: linear-gradient(to right, lightcoral, red);
+        .rutina {
+            margin-top: 15px;
+            border: 2px solid black;
+            padding: 10px;
+            background: linear-gradient(to right, lightgrey, white, lightblue, lightgreen);
+        }
+
+        .footer {
+            background: linear-gradient(to right, lightblue, white, lightgreen);
+            border-top: 4px solid black;
+            margin-top: 10px;
+        }
+
+        .botones_principales {
+            width: 100%;
+            margin-top: 10px;
+            border: 3px solid red;
+            background-color: black;
+            color: red;
             font-weight: bolder;
         }
 
-        .btn-card {
-            border: 4px solid white;
-            background: linear-gradient(to right, lightcoral, red);
+        .botones_principales:hover {
+            width: 100%;
+            margin-top: 10px;
+            border: 3px solid black;
+            background-color: red;
             color: black;
             font-weight: bolder;
+            transition: 2s;
+        }
 
+        .acordeones{
+            margin-top: 10px;
+        }
+
+        .accordion-button{
+            background-color: black;
+            color: white;
+            border: 3px solid lightcoral;
+        }
+        
+        .accordion-button:hover{
+            background-color: white;
+            color: black;
+            border: 3px solid lightblue;
+            transition: 2s;
         }
     </style>
 </head>
 
 <body>
 
-    <!-- Navbar -->
+
     <nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top">
         <div class="container-fluid">
-            <img src="./messi.jpg" alt="Bootstrap" width="30" height="24" class="d-inline-block align-text-top logo">
-            <a class="navbar-brand fw-bold" href="#">Ejemplo web</a>
+            <img src="./golden's gym.png" alt=""
+                style="width: 30px; height: 30px; border-radius: 50%; margin-right: 5px;">
+            <a class="navbar-brand" href="#">Practica recuperacion</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
@@ -129,94 +121,72 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        <a class="nav-link" href="#rutina">RUTINA</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Link</a>
+                        <a class="nav-link" href="https://cactusastro.github.io/Gimnasio">Otra web</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Link</a>
+                        <a class="nav-link" href="https://www.instagram.com/ester_grao/">Eché y sus mierdas de
+                            proyectos</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Link</a>
+                        <a class="nav-link"
+                            href="https://www.diariodeteruel.es/uploads/diariodeteruel/contenidos/4735_angel-sanchez.png">Angel
+                            me cago en dios</a>
                     </li>
-                </ul>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Link</a>
-                </li>
             </div>
         </div>
     </nav>
 
-    <!-- Botones -->
     <div class="container-fluid text-center">
         <div class="row">
-            <div class="col-sm-12 col-lg-3 ">
-                <a href="https://www.youtube.com">
-                    <button type="button" class="btn btn_principiopagina w-100">moscar1</button>
-                </a>
+            <div class="col-sm-12 col-md-6 col-lg-4">
+                <button type="button" class="btn botones_principales">messi</button>
             </div>
-            <div class="col-sm-12 col-lg-3 ">
-                <a href="https://www.youtube.com">
-                    <button type="button" class="btn btn_principiopagina w-100">moscar1</button>
-                </a>
+            <div class="col-sm-12 col-md-6 col-lg-4">
+                <button type="button" class="btn botones_principales">moscar</button>
             </div>
-            <div class="col-sm-12 col-lg-3 ">
-                <a href="https://www.youtube.com">
-                    <button type="button" class="btn btn_principiopagina w-100">moscar1</button>
-                </a>
+            <div class="col-sm-12 col-md-6 col-lg-4">
+                <button type="button" class="btn botones_principales">ñicoñas</button>
             </div>
-            <div class="col-sm-12 col-lg-3 ">
-                <a href="https://www.youtube.com">
-                    <button type="button" class="btn btn_principiopagina w-100">moscar1</button>
-                </a>
+            <div class="col-sm-12 col-md-6 col-lg-4">
+                <button type="button" class="btn botones_principales">ajia</button>
             </div>
-            <div class="col-sm-12 col-lg-3 ">
-                <a href="https://www.youtube.com">
-                    <button type="button" class="btn btn_principiopagina w-100">moscar1</button>
-                </a>
+            <div class="col-sm-12 col-md-6 col-lg-4">
+                <button type="button" class="btn botones_principales">moscar calvo</button>
             </div>
-            <div class="col-sm-12 col-lg-3 ">
-                <a href="https://www.youtube.com">
-                    <button type="button" class="btn btn_principiopagina w-100">moscar1</button>
-                </a>
-            </div>
-            <div class="col-sm-12 col-lg-3 ">
-                <a href="https://www.youtube.com">
-                    <button type="button" class="btn btn_principiopagina w-100">moscar1</button>
-                </a>
-            </div>
-            <div class="col-sm-12 col-lg-3 ">
-                <a href="https://www.youtube.com">
-                    <button type="button" class="btn btn_principiopagina w-100">moscar1</button>
-                </a>
+            <div class="col-sm-12 col-md-6 col-lg-4">
+                <button type="button" class="btn botones_principales">ajia</button>
             </div>
         </div>
     </div>
 
-    <!-- Carrusel -->
-    <div class="container text-center carrusel">
+    <div class="container text-center">
         <div class="row">
-            <div class="col">
+            <div class="col-sm-12 col-md-12 col-lg-12 ">
                 <div id="carouselExample" class="carousel slide">
                     <div class="carousel-inner">
                         <div class="carousel-item active">
-                            <img src="./messi2.jpg" class="d-block w-100" alt="...">
+                            <img src="https://www.ecoavant.com/uploads/s1/28/20/68/imagen-de-que-es-la-naturaleza.webp"
+                                class="d-block w-100" alt="...">
                         </div>
                         <div class="carousel-item">
-                            <img src="./messi4.jpeg" class="d-block w-100" alt="...">
+                            <img src="https://s1.significados.com/foto/naturaleza-og.jpg?class=ogImageSquare"
+                                class="d-block w-100" alt="...">
                         </div>
                         <div class="carousel-item">
-                            <img src="./messi3.jpg" class="d-block w-100" alt="...">
+                            <img src="https://alimentaods.org/wp-content/uploads/2021/05/Naturaleza_Felix-Mittermeier_Pexels.jpg"
+                                class="d-block w-100" alt="...">
                         </div>
                     </div>
-                    <button class="carousel-control-prev botones_carrusel" type="button"
-                        data-bs-target="#carouselExample" data-bs-slide="prev">
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample"
+                        data-bs-slide="prev">
                         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                         <span class="visually-hidden">Previous</span>
                     </button>
-                    <button class="carousel-control-next botones_carrusel" type="button"
-                        data-bs-target="#carouselExample" data-bs-slide="next">
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample"
+                        data-bs-slide="next">
                         <span class="carousel-control-next-icon" aria-hidden="true"></span>
                         <span class="visually-hidden">Next</span>
                     </button>
@@ -226,113 +196,175 @@
     </div>
 
 
-    <!-- Formulario -->
-    <div class="container-fluid text-center formulario">
-        <div class="row justify-content-center">
-            <div class="col-sm-3 col-md-3 col-lg-2">
-                <p style="font-weight: bolder;">A quien prefieres?</p>
-                <div class="form-check">
-                    <input class="form-check-input" type="radio" name="radioDefault" id="radioDefault1">
-                    <label class="form-check-label" for="radioDefault1">
-                        Messi
-                    </label>
-                </div>
-                <div class="form-check">
-                    <input class="form-check-input" type="radio" name="radioDefault" id="radioDefault2" checked>
-                    <label class="form-check-label" for="radioDefault2">
-                        Crsitiano Ronaldo
-                    </label>
-                </div>
-            </div>
-        </div>
-    </div>
-
-
-    <!-- Desplegable -->
-
-    <div class="container-fluid text-center">
-        <div class="row justify-content-center">
-            <div class="col-sm-12 col-lg-4">
-                <div class="dropdown">
-                    <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
-                        aria-expanded="false">
-                        Dropdown button
-                    </button>
-                    <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#">Action</a></li>
-                        <li><a class="dropdown-item" href="#">Another action</a></li>
-                        <li><a class="dropdown-item" href="#">Something else here</a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="col-sm-12 col-lg-4">
-                <div class="dropdown">
-                    <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
-                        aria-expanded="false">
-                        Dropdown button
-                    </button>
-                    <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#">Action</a></li>
-                        <li><a class="dropdown-item" href="#">Another action</a></li>
-                        <li><a class="dropdown-item" href="#">Something else here</a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="col-sm-12 col-lg-4">
-                <div class="dropdown">
-                    <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
-                        aria-expanded="false">
-                        Dropdown button
-                    </button>
-                    <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#">Action</a></li>
-                        <li><a class="dropdown-item" href="#">Another action</a></li>
-                        <li><a class="dropdown-item" href="#">Something else here</a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </div>
-
-
-    <!-- cartas -->
     <div class="container text-center">
-        <div class="row justify-content-center">
-            <div class="col-sm-12 col-lg-4">
-                <div class="card" style="width: 100%; margin-top: 10px;">
-                    <img src="./messi.jpg" class="card-img-top" alt="...">
+        <div class="row g-4">
+            <div class="col-sm-12 col-md-4 col-lg-4">
+                <div class="card">
+                    <img src="https://objetos-xlk.estaticos-marca.com/uploads/2024/10/09/67069d286a346.jpeg"
+                        class="card-img-top" alt="...">
                     <div class="card-body">
                         <h5 class="card-title">Card title</h5>
                         <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                            the card’s content.</p>
-                        <a href="#" class="btn btn-card btn-primary">Go somewhere</a>
+                            the card’s
+                            content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
                     </div>
                 </div>
             </div>
-            <div class="col-sm-12 col-lg-4">
-                <div class="card" style="width: 100%; margin-top: 10px;">
-                    <img src="./messi2.jpg" class="card-img-top" alt="...">
+            <div class="col-sm-12 col-md-4 col-lg-4">
+                <div class="card">
+                    <img src="https://estaticos-cdn.prensaiberica.es/clip/c85ade05-18f9-42ff-a8e7-4e7e65b2fce0_16-9-discover-aspect-ratio_default_0_x563y457.jpg"
+                        class="card-img-top" alt="...">
                     <div class="card-body">
                         <h5 class="card-title">Card title</h5>
                         <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                            the card’s content.</p>
-                        <a href="#" class="btn btn-card btn-primary">Go somewhere</a>
+                            the card’s
+                            content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
                     </div>
                 </div>
             </div>
-            <div class="col-sm-12 col-lg-4">
-                <div class="card" style="width: 100%; margin-top: 10px; ">
-                    <img src="./messi3.jpg" class="card-img-top" alt="...">
+            <div class="col-sm-12 col-md-4 col-lg-4">
+                <div class="card">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUmwdfCQZMb7er4Ggv95Hx1UvOB3Ak496CfQ&s"
+                        class="card-img-top" alt="...">
                     <div class="card-body">
                         <h5 class="card-title">Card title</h5>
                         <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                            the card’s content.</p>
-                        <a href="#" class="btn btn-card btn-primary">Go somewhere</a>
+                            the card’s
+                            content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
                     </div>
                 </div>
             </div>
         </div>
+    </div>
+
+    <div class="container text-center acordeones">
+        <div class="row">
+            <div class="col">
+                <div class="accordion accordion-flush" id="accordionFlushExample">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseOne" aria-expanded="false"
+                                aria-controls="flush-collapseOne">
+                                Ñigo
+                            </button>
+                        </h2>
+                        <div id="flush-collapseOne" class="accordion-collapse collapse"
+                            data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body" style="display: flex; justify-content: flex-start;">Nicolas no estes con una niña de 7 años por favor</div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseTwo" aria-expanded="false"
+                                aria-controls="flush-collapseTwo">
+                                Moscar suspende sor
+                            </button>
+                        </h2>
+                        <div id="flush-collapseTwo" class="accordion-collapse collapse"
+                            data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body" style="display: flex; justify-content: flex-start;">Oscar no me jodas que has suspendido sor, eres una patata autista??</div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseThree" aria-expanded="false"
+                                aria-controls="flush-collapseThree">
+                                Ñigolas tambien suspende sor
+                            </button>
+                        </h2>
+                        <div id="flush-collapseThree" class="accordion-collapse collapse"
+                            data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body" style="display: flex; justify-content: flex-start;">Polloblas no me jodas que has suspendido sor, eres una pez google autista autista??</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container text-center rutina" id="rutina">
+        <div class="row">
+            <div class="col-sm-12 col-md-6 col-lg-6">
+                <img src="https://hips.hearstapps.com/hmg-prod/images/young-man-training-on-a-leg-machine-in-the-gym-royalty-free-image-1747679772.pjpeg"
+                    alt="" style="width: 100%; border-radius: 10px;">
+
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-6">
+                <h3>
+                    Dia de pierna
+                </h3>
+                <hr style="border: 2px solid blue; border-radius: 20px;">
+                <p style="display: flex; justify-content: flex-start;">
+                    Hacer pierna es fundamental para el desarrollo de tus músculos
+                </p>
+                <ul>
+                    <li>sentadilla</li>
+                    <li>peso muerto</li>
+                    <li>femoral sentado</li>
+                </ul>
+
+            </div>
+
+            <hr style="border: 3px solid red; margin-top: 10px; margin-bottom: 10px; border-radius: 30px;">
+
+            <div class="col-sm-12 col-md-6 col-lg-6">
+                <img src="https://mejorconsalud.as.com/wp-content/uploads/2021/11/ejercicio-polea-pecho.jpg" alt=""
+                    style="width: 100%; border-radius: 10px;">
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-6">
+                <h3>
+                    Dia de pecho
+                </h3>
+                <hr style="border: 2px solid blue; border-radius: 20px;">
+                <p style="display: flex; justify-content: flex-start;">
+                    haz pecho para poder poner nerviosas a las mujeres y que te tengan envida.
+                </p>
+                <ul>
+                    <li>banca</li>
+                    <li>banca inclinada</li>
+                    <li>triseps</li>
+                </ul>
+
+            </div>
+            <hr style="border: 3px solid red; margin-top: 10px; margin-bottom: 10px; border-radius: 30px;">
+
+            <div class="col-sm-12 col-md-6 col-lg-6">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmX24Beb21Gju1GSt-oS6voQjF2WcOZ9-9kw&s"
+                    alt="" style="width: 100%; border-radius: 10px;">
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-6">
+                <h3>
+                    Dia de pecho
+                </h3>
+                <hr style="border: 2px solid blue; border-radius: 20px;">
+                <p style="display: flex; justify-content: flex-start;">
+                    haz espalda para parecer una tortuga ninja :)
+                </p>
+                <ul>
+                    <li>dominadas</li>
+                    <li>remos</li>
+                    <li>bises</li>
+                </ul>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid footer">
+        <footer class="py-3 my-4 border-top">
+            <p class="text-center mb-0 text-body-secondary">© 2026 Hecho por Iván Ibáñez Benedicto</p> <a href="/"
+                class=" d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none"
+                aria-label="Bootstrap"> <svg class="bi me-2" width="40" height="32" aria-hidden="true">
+                    <use xlink:href="#bootstrap"></use>
+                </svg> </a>
+        </footer>
     </div>
 </body>
 
-</htmlprincipiopagina
+</html>
