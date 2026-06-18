@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ivan</title>
+    <title>Ajia_Iván</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
@@ -13,40 +13,40 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
 
     <style>
-        body {
-            background: linear-gradient(125deg, red, pink, lightcoral);
-        }
-
-        .carousel-item {
-            height: 1500px;
-        }
-
-        .carousel-item img {
-            border-radius: 20px;
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
-
-
         .card {
-            height: 700px;
-            border-radius: 22px;
+            height: 490px;
+            border-radius: 90px;
+            border: 2px solid black;
+            background-color: black;
+            color: white;
+        }
+
+        .card:hover {
+            height: 490px;
+            border-radius: 90px;
+            border: 2px solid black;
+            background-color: white;
+            color: black;
+            transition: 3s;
         }
 
         .card-img-top {
-            height: 500px;
-            border-radius: 22px 22px 0px 0px;
+            height: 300px;
+            object-fit: cover;
+            border-radius: 90px 90px 0px 0px;
         }
     </style>
 </head>
 
 <body>
-    <!-- Navbar  -->
-    <nav class="navbar navbar-expand-lg bg-body-tertiary p-3 sticky-top bg-dark" data-bs-theme="dark">
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg p-3 sticky-top"
+        style="background: linear-gradient(125deg, red, pink, lightcoral)" data-bs-theme="light">
         <div class="container-fluid">
-            <a class="navbar-brand" style="font-size: 30px; font-weight: bolder; font-family: cursive;"
-                href="#">Iván</a>
+            <img src="./ivan2.jpeg" style="height: 70px; width: 70px; border-radius: 30px; margin-right: 10px;" alt="">
+            <a class="navbar-brand" href="#"
+                style="font-size: 30px; font-family: cursive; font-weight: bolder;">Iván</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
@@ -64,157 +64,91 @@
                         <a class="nav-link" href="#Proyectos">Proyectos</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#Formularios">Formularios</a>
+                        <a class="nav-link" href="#Formulario">Formulario final</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
 
-    <!-- Sobre mi  -->
-    <div class="container col-xxl-8 px-4 py-5">
+
+    <!-- Hero -->
+    <div class="container col-xxl-8 px-4 py-5" id="sobremi">
         <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+            <div class="col-12 col-sm-8 col-lg-6"> <img src="./developer.png" class="d-block mx-lg-auto img-fluid"
+                    alt="Bootstrap Themes"
+                    style="border-radius: 800px; border: 2px solid black; height: 600px; width: 600px;"> </div>
             <div class="col-12 col-sm-8 col-lg-6">
-                <img src="./verita.jpeg" class="d-block mx-lg-auto img-fluid" style="height: 500px; width: 700px; border: 3px solid red; border-radius: 20px;" alt="Bootstrap Themes">
-            </div>
-            <div class="col-12 col-sm-8 col-lg-6">
-                <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">Responsive left-aligned hero with image</h1>
-                <p class="lead">Quickly design and customize responsive mobile-first sites with Bootstrap, the world’s
-                    most popular front-end open source toolkit, featuring Sass variables and mixins, responsive grid
-                    system, extensive prebuilt components, and powerful JavaScript plugins.</p>
-                <div class="d-grid gap-2 d-md-flex justify-content-md-start">
-                    <button type="button" class="btn btn-primary btn-lg px-4 me-md-2">Primary</button>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Carrusel -->
-    <div class="container text-center">
-        <div class="row">
-            <div class="col-12 col-md-12 col-lg-12">
-                <div id="carouselExampleCaptions" class="carousel slide">
-                    <div class="carousel-indicators">
-                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0"
-                            class="active" aria-current="true" aria-label="Slide 1"></button>
-                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
-                            aria-label="Slide 2"></button>
-                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
-                            aria-label="Slide 3"></button>
-                    </div>
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <img src="./ivan2.jpeg" class="d-block" alt="...">
-                            <div class="carousel-caption d-none d-md-block">
-                                <h5>First slide label</h5>
-                                <p>Some representative placeholder content for the first slide.</p>
-                            </div>
-                        </div>
-                        <div class="carousel-item">
-                            <img src="./verita.jpeg" class="d-block" alt="...">
-                            <div class="carousel-caption d-none d-md-block">
-                                <h5>Second slide label</h5>
-                                <p>Some representative placeholder content for the second slide.</p>
-                            </div>
-                        </div>
-                        <div class="carousel-item">
-                            <img src="./verita2.jpeg" class="d-block" alt="...">
-                            <div class="carousel-caption d-none d-md-block">
-                                <h5>Third slide label</h5>
-                                <p>Some representative placeholder content for the third slide.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
-                        data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Previous</span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
-                        data-bs-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Next</span>
-                    </button>
+                <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">Sobre mi</h1>
+                <p class="lead">Soy un estudiante de SMR que ha realizado las prácticas en el hospital obispo polanco de
+                    Teruel. actualmente mi media es la más alta de mi curso porque soy lo mejor que hay y me gusta
+                    programar en distintos lenguajes como HTML, Python, JS, etc... al año que viene haré el superior de
+                    DAM (Desarrollo de Aplicaciones Multiplataforma)</p>
+                <div class="d-grid gap-2 d-md-flex justify-content-md-start"> <a
+                        href="https://www.youtube.com/shorts/GSG_Z6H1OmY" class="btn btn-primary">Pulsa aquí si quieres
+                        ver algo to guapo :)</a>
                 </div>
             </div>
         </div>
     </div>
 
 
-    <!-- HABILIDADES -->
-    <div class="container text-center mt-5">
+    <!-- Habilidades -->
+    <div class="container text-center" id="Habilidades">
         <div class="row g-4">
             <h1>MIS HABILIDADES</h1>
-            <div class="col-12 col-md-3 col-lg-3">
+            <div class="col-6 col-md-3 col-lg-3">
                 <div class="card">
-                    <img src="./ivan.png" class="card-img-top" alt="...">
+                    <img src="./html.png" class="card-img-top" alt="...">
                     <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                            the card’s content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                        <h5 class="card-title">HTML</h5>
+                        <p class="card-text">Lo que mejor se me da porque me cago en dios mucho</p>
                     </div>
                 </div>
             </div>
-            <div class="col-12 col-md-3 col-lg-3">
+            <div class="col-6 col-md-3 col-lg-3">
                 <div class="card">
-                    <img src="./ivan2.jpeg" class="card-img-top" alt="...">
+                    <img src="./bootstrap.png" class="card-img-top" alt="...">
                     <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                            the card’s content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                        <h5 class="card-title">Bootstrap</h5>
+                        <p class="card-text">Antes no lo llevaba bien, pero ahora soy la hostia joder</p>
                     </div>
                 </div>
             </div>
-            <div class="col-12 col-md-3 col-lg-3">
+            <div class="col-6 col-md-3 col-lg-3">
                 <div class="card">
-                    <img src="./verita.jpeg" class="card-img-top" alt="...">
+                    <img src="./js.png" class="card-img-top" alt="...">
                     <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                            the card’s content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                        <h5 class="card-title">JS o JavaScript</h5>
+                        <p class="card-text">Me parece una mierda, exactamente una pedazo de PUTA MIERDA pero aún así
+                            tambien soy bueno en esto</p>
                     </div>
                 </div>
             </div>
-            <div class="col-12 col-md-3 col-lg-3">
+            <div class="col-6 col-md-3 col-lg-3">
                 <div class="card">
-                    <img src="./verita2.jpeg" class="card-img-top" alt="...">
+                    <img src="./flutter.png" class="card-img-top" alt="...">
                     <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                            the card’s content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                        <h5 class="card-title">Flutter</h5>
+                        <p class="card-text">Ni puta idea de que es, de hecho nunca habia oido hablar de esta porqueria
+                            pero seguro que si lo toco un poco se me dara de puta madre</p>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 
-    <!-- PROYECTOS -->
-    <div class="container text-center mt-5">
+
+    <!-- Proyectos -->
+    <div class="container text-center mt-4" id="Proyectos">
         <div class="row g-4">
             <h1>MIS PROYECTOS</h1>
             <div class="col-12 col-md-4 col-lg-4">
                 <div class="card">
                     <img src="./tienda-online.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                            the card’s content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-12 col-md-4 col-lg-4">
-                <div class="card">
-                    <img src="./apps.jpeg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                            the card’s content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                        <h5 class="card-title">Tienda On-Line</h5>
+                        <p class="card-text">Aquí no encontrarás nada de informática, solo Monster blanca</p>
                     </div>
                 </div>
             </div>
@@ -222,49 +156,63 @@
                 <div class="card">
                     <img src="./blog.webp" class="card-img-top" alt="...">
                     <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                            the card’s content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                        <h5 class="card-title">Blog</h5>
+                        <p class="card-text">Blog de como abrir una Monster buena maravillosa para tu salud</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-4 col-lg-4">
+                <div class="card">
+                    <img src="./apps.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">APP's</h5>
+                        <p class="card-text">Esto es más una web para comprar Monsters. Pulse el botón para comprar</p>
+                        <a href="https://www.monsterenergy.com/es-es/" class="btn btn-primary">Pulsa aquí si
+                            Comprar Monsters</a>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 
-    <!--   -->
-    <div class="container text-start mt-5">
-        <div class="row g-4">
-            <div class="col-12 col-md-6 col-lg-6">
-                <h3 style="font-size: 30px; font-weight: bolder; text-align: center;">Cintactanos</h3>
-                    <div class="mb-3">
-                        <label for="Correo" class="form-label">Correo</label>
-                        <input type="email" class="form-control" id="Correo" placeholder="name@example.com">
-                    </div>
-                    <div class="mb-3">
-                        <label for="Asunto" class="form-label">Asunto del mensaje</label>
-                        <input type="text" class="form-control" placeholder="asunto" aria-label="Asunto" id="Asunto">
-                    </div>
-                    <div class="mb-3">
-                        <label for="Mensaje" class="form-label">Mensaje</label>
-                        <textarea class="form-control" id="Mensaje" placeholder="..." rows="3"></textarea>
-                    </div>
-                    <div class="mb-3">
-                        <label for="Nombre" class="form-label">Nombre</label>
-                        <input type="text" class="form-control" placeholder="Nombre" aria-label="Nombre" id="Nombre">
-                    </div>
-                    <div class="mb-3">
-                        <label for="Apellidos" class="form-label">Apellidos</label>
-                        <input type="text" class="form-control" placeholder="Tus apellidos" aria-label="Apellidos"
-                            id="Apellidos">
-                    </div>
-                    <label for="range4" class="form-label">Valoración de mi página web</label>
-                    <input type="range" class="form-range" min="0" max="100" value="50" id="range4">
-                    <output for="range4" id="rangeValue" aria-hidden="true"></output>
 
+    <!-- Formulario -->
+    <div class="container text-start mt-5" id="Formulario">
+        <div class="row">
+            <h1 class="text-center">¿QUE TE HA PARECIDO?</h1>
+            <div class="col-12 col-md-6 col-lg-6">
+                <h2 class="text-center">OPINIÓN</h2>
+                <div class="mb-3">
+                    <label for="Correo" class="form-label">Correo electrónico</label>
+                    <input type="email" class="form-control" id="Correo" placeholder="nombre@compañia.com">
+                </div>
+                <div class="mb-3">
+                    <label for="Asunto" class="form-label">Asunto</label>
+                    <input type="text" class="form-control" placeholder="Asunto del mensaje" aria-label="First name"
+                        id="Asunto">
+                </div>
+                <div class="mb-3">
+                    <label for="Mensaje" class="form-label">Mensaje</label>
+                    <textarea class="form-control" placeholder="......" id="Mensaje" rows="3"></textarea>
+                </div>
+                <div class="mb-3">
+                    <label for="Nombre" class="form-label">Nombre</label>
+                    <input type="text" class="form-control" placeholder="Ponga usted su nombre por favor :)"
+                        aria-label="Nombre">
+                </div>
+                <div class="mb-3">
+                    <label for="Apellidos" class="form-label">Apellidos</label>
+                    <input type="text" class="form-control" placeholder="Ponga usted sus Apellidos por favor :)"
+                        aria-label="Apellidos">
+                </div>
+                <div class="mb-3">
+                    <label for="range4" class="form-label">Rango de satisfacción</label>
+                    <input type="range" class="form-range" min="0" max="100" value="0" id="range4">
+                    <output for="range4" id="rangeValue" aria-hidden="true"></output>
+                </div>
             </div>
             <div class="col-12 col-md-6 col-lg-6">
-                <h3 style="font-size: 30px; font-weight: bolder; text-align: center;">Nuestra info</h3>
+                <h2 class="text-center">CONTACTO</h2>
                 <hr>
                 <i class="bi bi-envelope me-2"></i>xxxxxxx@icloud.com
                 <hr>
@@ -277,10 +225,14 @@
         </div>
     </div>
 
+
     <!-- Footer -->
-    <footer class="py-4 bg-dark" data-bs-theme="dark">
-        <p class="text-center text-body-secondary mb-0">© 2025 Astro's Company</p>
+    <footer class="py-3 px-3 mt-5"
+        style="background: linear-gradient(125deg, red, pink, lightcoral); border-top: 4px solid black; border-radius: 30px 30px 0px 0px;"
+        data-bs-theme="dark">
+        <p class="text-center mb-0 p-3" style="color: black; font-weight: bolder;">© 2026 Compañía Ajia ajia </p>
     </footer>
+
 
     <script>
         // This is an example script, please modify as needed
